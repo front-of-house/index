@@ -39,6 +39,9 @@ export function Page({ head }) {
     title: title([page.metaTitle]),
     description: page.metaDescription,
     image: image(page.metaImage).width(1200).url(),
+    link: [
+      { rel: 'icon', type: 'image/png', href: '/static/presta-favicon.png' },
+    ]
   });
 
   return (

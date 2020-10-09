@@ -31,7 +31,6 @@ export function createDocument (ctx) {
         { name: 'author', content: '@estrattonbailey' },
       ],
       link: [
-        `<link rel="icon" type="image/png" href="/static/favicon.png">`,
         `<link rel="stylesheet" href="https://unpkg.com/svbstrate@4.1.1/src/lib/reset.css" />`,
         `<link rel="stylesheet" href="https://unpkg.com/svbstrate@4.1.1/src/lib/buttons.css" />`,
         `<link rel="stylesheet" href="https://unpkg.com/svbstrate@4.1.1/src/lib/forms.css" />`,
@@ -84,6 +83,7 @@ export function createDocument (ctx) {
             margin: 1em 0 0.75em;
           }
           pre, code {
+            font-family: 'Roboto Mono', monospace;
             font-size: 0.9rem;
             background: whitesmoke;
           }

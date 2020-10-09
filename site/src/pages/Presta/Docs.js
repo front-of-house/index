@@ -58,6 +58,9 @@ export function Page({ pathname, head }) {
   head({
     title: title([page.metaTitle, 'presta']),
     description: page.metaDescription,
+    link: [
+      { rel: 'icon', type: 'image/png', href: '/static/presta-favicon.png' },
+    ]
   });
 
   return (

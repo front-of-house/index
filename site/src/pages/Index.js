@@ -11,6 +11,9 @@ export function Page({ head }) {
   head({
     title: 'sure thing',
     description: 'you got it',
+    link: [
+      { rel: 'icon', type: 'image/png', href: '/static/favicon.png' },
+    ]
   });
 
   return (
