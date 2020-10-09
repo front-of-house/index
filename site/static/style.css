@@ -1,0 +1,82 @@
+@import url('https://unpkg.com/svbstrate@4.1.1/src/lib/reset.css');
+@import url('https://unpkg.com/svbstrate@4.1.1/src/lib/buttons.css');
+@import url('https://unpkg.com/svbstrate@4.1.1/src/lib/forms.css');
+@import url('https://unpkg.com/svbstrate@4.1.1/src/lib/lists.css');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital@0;1&family=Roboto:ital,wght@0,400;0,700;1,400&display=swap');
+
+html, body {
+  color: #122738;
+  font-weight: 400;
+  font-family: 'Roboto', -apple-system, system-ui, BlinkMacSystemFont, sans-serif;
+}
+::selection {
+  background: blue;
+  color: white;
+}
+a {
+  color: blue;
+}
+a:visited {
+  color: inherit;
+}
+a:focus {
+  outline: 2px dashed blue;
+}
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+p {
+  line-height: 1.5;
+  margin: 0;
+}
+h1 { font-size: 3rem }h2 { font-size: 2.2rem }h3 { font-size: 1.8rem }h4 { font-size: 1.4rem }h5 { font-size: 1rem }h6 { font-size: 0.875rem }
+.wysiwyg p {
+  margin-bottom: 16px;
+}
+.wysiwyg ul {
+  margin: 16px 0;
+  list-style: disc outside;
+  padding-left: 16px;
+}
+.wysiwyg h1,
+.wysiwyg h2,
+.wysiwyg h3,
+.wysiwyg h4,
+.wysiwyg h5,
+.wysiwyg h6 {
+  margin: 1em 0 0.75em;
+}
+pre, code {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 0.9rem;
+  background: whitesmoke;
+}
+pre code {
+  background: transparent;
+}
+pre {
+  margin: 16px 0;
+  padding: 32px;
+  overflow: auto;
+  border-radius: 6px;
+  background: whitesmoke;
+  box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.04), 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 16px 24px rgba(0, 0, 0, 0.04), 0px 24px 32px rgba(0, 0, 0, 0.04);
+}
+pre code::selection,
+pre::selection {
+  background: #122738;
+  color: white;
+}
+.project a,
+.project a:visited {
+  color: blue;
+}
+.project pre,
+.project code {
+  background: #0B497F;
+}
+
+#root {
+  position: relative;
+  z-index: 1;
+}

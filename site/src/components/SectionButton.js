@@ -5,7 +5,7 @@ import { Arrow } from '@/src/icons/Arrow';
 
 export function SectionButton({ right, title, description, ...props }) {
   return (
-    <Box as="button" f aic jcb py={6} px={8} c="d" bg="transparent" fs={6} css={{ border: '2px solid currentColor', borderRadius: '6px', textDecoration: 'none' }} {...props}>
+    <Box as="button" f aic jcb py={6} px={8} c="d" bg="white" fs={6} css={{ border: '2px solid currentColor', borderRadius: '6px', textDecoration: 'none' }} {...props}>
       <Box ta={right ? 'left' : 'right'}>
         <Box as="h5">{title}</Box>
         {description && <Box as="p" mt={2} fs={6}>{description}</Box>}

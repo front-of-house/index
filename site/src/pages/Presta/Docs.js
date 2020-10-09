@@ -93,7 +93,7 @@ export function Page({ pathname, head }) {
               <Box as="ul" db>
                 {prestaDocs.docs.map(doc => (
                   <Box as="li" f aic mb={2}>
-                    <Box as="a" href={`/presta/docs/${doc.slug}`}>{doc.linkTitle}</Box>
+                    <Box as="a" lh={5} href={`/presta/docs/${doc.slug}`}>{doc.linkTitle}</Box>
                   </Box>
                 ))}
               </Box>
