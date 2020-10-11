@@ -41,6 +41,7 @@ export function Page({ pathname, head }) {
       *[_type == 'prestaDoc' && $slug == slug.current]{
         metaTitle,
         metaDescription,
+        metaImage,
         linkTitle,
         linkDescription,
         body,
@@ -56,8 +57,9 @@ export function Page({ pathname, head }) {
   const next = prestaDocs.docs[index + 1]
 
   head({
-    title: title([page.metaTitle, 'presta']),
+    title: title([page.metaTitle, 'Presta']),
     description: page.metaDescription,
+    image: image(page.metaImage).width(1200).url(),
     link: [
       { rel: 'icon', type: 'image/png', href: '/static/presta-favicon.png' },
     ]

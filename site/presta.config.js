@@ -5,7 +5,7 @@ import { theme } from '@/src/lib/theme'
 
 configure({ theme })
 
-const name = `estrattonbailey`
+const name = `sure thing`
 const image = `/static/og.png`
 const url = `https://sure-thing.net`
 
