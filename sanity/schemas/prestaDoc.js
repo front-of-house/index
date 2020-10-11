@@ -14,6 +14,11 @@ export default {
       type: 'text'
     },
     {
+      name: 'metaImage',
+      title: 'Meta Image',
+      type: 'image',
+    },
+    {
       name: 'slug',
       title: 'Slug',
       type: 'slug',

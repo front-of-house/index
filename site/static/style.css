@@ -17,7 +17,7 @@ a {
   color: blue;
 }
 a:visited {
-  color: inherit;
+  color: blue;
 }
 a:focus {
   outline: 2px dashed blue;

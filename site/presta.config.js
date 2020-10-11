@@ -7,14 +7,13 @@ configure({ theme })
 
 const name = `estrattonbailey`
 const image = `/static/og.png`
-const url = `https://estrattonbailey.com`
+const url = `https://sure-thing.net`
 
 export const pages = 'src/pages/**/*.js'
 export const output = 'build'
 
 export function createDocument (ctx) {
-  return document(ctx, {
-    body: `<div id="bg"></div><div id="root">${ctx.body}</div>`,
+  return document({
     foot: {
       script: [{ src: '/client.js' }]
     },
@@ -34,12 +33,14 @@ export function createDocument (ctx) {
         { name: 'author', content: '@estrattonbailey' },
       ],
       link: [
-        `<link rel="stylesheet" href="/static/style.css" />`,
+        { rel: 'stylesheet', href: '/static/style.css' },
       ],
       style: [
-        `<style id="style">${getCss()}</style>`,
+        { id: 'style', children: getCss() },
       ],
     }
+  }, ctx, {
+    body: `<div id="bg"></div><div id="root">${ctx.body}</div>`,
   })
 }
 
