@@ -2,7 +2,7 @@ import { h } from "hyposcript";
 import { Box } from "hypobox";
 import { load } from "presta/load";
 
-import { client } from "@/src/lib/sanity";
+import { client, image } from "@/src/lib/sanity";
 import { title } from "@/src/lib/title";
 
 import { Gutter } from "@/src/components/Gutter";
