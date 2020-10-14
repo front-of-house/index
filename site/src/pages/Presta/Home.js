@@ -40,7 +40,7 @@ export function Page({ head }) {
     description: page.metaDescription,
     image: image(page.metaImage).width(1200).url(),
     link: [
-      { rel: 'icon', type: 'image/png', href: '/static/presta-favicon.png' },
+      { rel: 'icon', type: 'image/png', href: '/static/presta-mark-favicon.png' },
     ]
   });
 
@@ -49,7 +49,9 @@ export function Page({ head }) {
       <Gutter withVertical>
         <Box mx="auto" mw="1100px">
           <Box f aic jcb>
-            <Box as="h1" fs={3} c="b" mb={4}>presta</Box>
+            <Box as="h1" fs={3} c="b">
+              <Box as="img" src="/static/presta-mark.png" w="40px" />
+            </Box>
 
             <Box as="ul" f aic>
               <Box as="li" db>
@@ -69,9 +71,13 @@ export function Page({ head }) {
 
           <Alert>
             <Box f aic fw jcb>
-              Presta is in active beta. Questions, comments, ideas? Open an issue
-              or PR!
-              <Button as="a" href="https://github.com/sure-thing/presta/issues/new/choose" target="_blank">New Issue</Button>
+              <Box w={[1, 1, 'auto']}>
+                Presta is in active beta. Questions, comments, ideas? Open an issue
+                or PR!
+              </Box>
+              <Box pt={[4, 4, 0]} w={[1, 1, 'auto']}>
+                <Button as="a" dib href="https://github.com/sure-thing/presta/issues/new/choose" target="_blank">New Issue</Button>
+              </Box>
             </Box>
           </Alert>
 
@@ -112,7 +118,7 @@ export function Page({ head }) {
               },
             ].map(f => (
               <Box as="li" db p={1} w={[1, 1/2, 1/3]}>
-                <Box h="100%" bg="whitesmoke" css={{ borderRadius: '6px' }}>
+                <Box h="100%" bg="dAlpha" css={{ borderRadius: '6px' }}>
                   <Box p={5}>
                     <Box as="h5" mb={3} c="b">{f.title}</Box>
                     <Box as="p" fs={6}>{f.description}</Box>

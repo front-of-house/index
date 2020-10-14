@@ -61,7 +61,7 @@ export function Page({ pathname, head }) {
     description: page.metaDescription,
     image: image(page.metaImage).width(1200).url(),
     link: [
-      { rel: 'icon', type: 'image/png', href: '/static/presta-favicon.png' },
+      { rel: 'icon', type: 'image/png', href: '/static/presta-mark-favicon.png' },
     ]
   });
 
@@ -70,9 +70,9 @@ export function Page({ pathname, head }) {
       <Gutter withVertical>
         <Box mx="auto" mw="1100px">
           <Box f aic jcb>
-            <Box as="h1" fs={3} c="b" mb={4}>
+            <Box as="h1" fs={3} c="b">
               <Box as="a" href="/presta">
-                presta
+                <Box as="img" src="/static/presta-mark.png" w="40px" />
               </Box>
             </Box>
 
@@ -86,12 +86,12 @@ export function Page({ pathname, head }) {
           </Box>
 
           <Box pt={16} f fw jcb mx={-6}>
-            <Box w={[1, 1, 1/4]} px={6} />
-            <Box w={[1, 1, 3/4]} px={6}>
+            <Box w={[1, 1, 1/5]} px={6} />
+            <Box w={[1, 1, 4/5]} px={6}>
               <Box as="h1" mb={6}>{page.metaTitle}</Box>
             </Box>
 
-            <Box w={[1, 1, 1/4]} px={6}>
+            <Box w={[1, 1, 1/5]} px={6}>
               <Box as="ul" db>
                 {prestaDocs.docs.map(doc => (
                   <Box as="li" f aic mb={2}>
@@ -100,7 +100,7 @@ export function Page({ pathname, head }) {
                 ))}
               </Box>
             </Box>
-            <Box w={[1, 1, 3/4]} px={6} mt={[6, 6, 0]}>
+            <Box w={[1, 1, 4/5]} px={6} mt={[6, 6, 0]}>
               <Markdown>
                 {page.body}
               </Markdown>

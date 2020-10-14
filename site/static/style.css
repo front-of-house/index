@@ -4,8 +4,16 @@
 @import url('https://unpkg.com/svbstrate@4.1.1/src/lib/lists.css');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital@0;1&family=Roboto:ital,wght@0,400;0,700;1,400&display=swap');
 
+:root {
+  --d: #122738;
+  --dAlpha: rgba(18, 39, 56, 0.04);
+  --dLight: rgba(18, 39, 56, 0.9);
+  --y: #EFCB68;
+  --shadow: 0px 0px 1px var(--dAlpha), 0px 4px 8px var(--dAlpha), 0px 16px 24px var(--dAlpha), 0px 24px 32px var(--dAlpha);
+}
+
 html, body {
-  color: #122738;
+  color: var(--d);
   font-weight: 400;
   font-family: 'Roboto', -apple-system, system-ui, BlinkMacSystemFont, sans-serif;
 }
@@ -49,22 +57,25 @@ h1 { font-size: 3rem }h2 { font-size: 2.2rem }h3 { font-size: 1.8rem }h4 { font-
 pre, code {
   font-family: 'Roboto Mono', monospace;
   font-size: 0.9rem;
-  background: whitesmoke;
+  background: var(--dAlpha);
+  color: var(--dLight);
 }
 pre code {
   background: transparent;
+  color: var(--d);
 }
 pre {
   margin: 16px 0;
   padding: 32px;
   overflow: auto;
   border-radius: 6px;
-  background: whitesmoke;
-  box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.04), 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 16px 24px rgba(0, 0, 0, 0.04), 0px 24px 32px rgba(0, 0, 0, 0.04);
+  color: var(--d);
+  background: var(--dAlpha);
+  box-shadow: var(--shadow);
 }
 pre code::selection,
 pre::selection {
-  background: #122738;
+  background: var(--d);
   color: white;
 }
 .project a,
