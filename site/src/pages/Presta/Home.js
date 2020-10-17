@@ -49,7 +49,7 @@ export function Page({ head }) {
       <Gutter withVertical>
         <Box mx="auto" mw="1100px">
           <Box f aic jcb>
-            <Box as="h1" fs={3} c="b">
+            <Box as="h1" c="b">
               <Box as="img" src="/static/presta-mark.png" w="40px" />
             </Box>
 
@@ -65,13 +65,32 @@ export function Page({ head }) {
             </Box>
           </Box>
 
-          <Box pt={80} pb={10}>
-            <Box as="h2" fs={2}>The simple way to build the modern web.</Box>
+          <Box pt={80} pb={[8, 8, 12]}>
+            <Box f aic jcb fw>
+              <Box as="h2" fs={2} w={[1, 1, 3/5]}>The hyper minimal web framework for developers.</Box>
+
+              <Box w={[1, 1, 2/5]} pt={[8, 8, 0]} pl={[0, 0, 8]}>
+                <Box c="white" bg="d" px={6} pt={6} pb={16} ff="mono" fs={6} css={{
+                  borderRadius: '6px',
+                  boxShadow: 'var(--shadow)',
+                }}>
+                  <Box f aic mb={4}>
+                    <Box mr={2} bg="#FA6666" w="10px" h="10px" css={{ borderRadius: '10px' }} />
+                    <Box mr={2} bg="#EDD13C" w="10px" h="10px" css={{ borderRadius: '10px' }} />
+                    <Box mr={2} bg="#86CD4F" w="10px" h="10px" css={{ borderRadius: '10px' }} />
+                  </Box>
+
+                  <Box f aic>
+                    <Box mr={2} css={{ opacity: 0.5 }}>$</Box> npx presta build pages/* dist/
+                  </Box>
+                </Box>
+              </Box>
+            </Box>
           </Box>
 
           <Alert>
             <Box f aic fw jcb>
-              <Box w={[1, 1, 'auto']}>
+              <Box w={[1, 1, 'auto']} c="d">
                 Presta is in active beta. Questions, comments, ideas? Open an issue
                 or PR!
               </Box>
@@ -81,12 +100,16 @@ export function Page({ head }) {
             </Box>
           </Alert>
 
-          <Box f fw py={10} mx={-4}>
+          <Box f fw py={12} mx={-4}>
             <Box w={[1, 1, 1/2]} px={4}>
-              <p>Render a single page – or thousands – in milliseconds, with no config. Load data from anywhere, use your preferred templating language, sleep easy.</p>
+              <Box as="p" fs={4}>
+                Render hybrid pages from a server or statically, with convenient co-located data loading. No more prop drilling or fat data files.
+              </Box>
             </Box>
             <Box w={[1, 1, 1/2]} px={4} mt={[4, 4, 0]}>
-              <p>Apply the same logic used to render pages statically to render in a server(less) context. Render pages with remote content, on-demand, using co-located data.</p>
+              <Box as="p" fs={4}>
+                Use any JS templating language (yes, React) and bring your own directory structure. Config is easy, if you even need it.
+              </Box>
             </Box>
           </Box>
 
@@ -94,15 +117,7 @@ export function Page({ head }) {
             {[
               {
                 title: `0kb runtime*`,
-                description: `*There is no runtime. Time to learn webpack.`,
-              },
-              {
-                title: `Easy`,
-                description: `Get started with one file, two exports, and the CLI.`,
-              },
-              {
-                title: `Transparent`,
-                description: `There's no magic, only strings. Bring back the document web.`,
+                description: `*There is no runtime. Pulled a sneaky on ya.`,
               },
               {
                 title: `Fast`,
@@ -110,11 +125,19 @@ export function Page({ head }) {
               },
               {
                 title: `Flexible`,
-                description: `Render any format. Easily nest microsites.`,
+                description: `Generate any file format. Seriously. Easily nest microsites.`,
               },
               {
                 title: `Familiar`,
-                description: `Go read the source: atm it's not even 700 lines.`,
+                description: `Go read the source (and contribute!): atm it's only about 700 loc.`,
+              },
+              {
+                title: `Easy`,
+                description: `Get started in seconds, right from the command line. Scale to thousands of pages.`,
+              },
+              {
+                title: `Transparent`,
+                description: `There's no magic, only strings. Bring back the document web.`,
               },
             ].map(f => (
               <Box as="li" db p={1} w={[1, 1/2, 1/3]}>

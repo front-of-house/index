@@ -27,7 +27,7 @@ export async function getPaths() {
 }
 
 export function Page({ pathname, head }) {
-  const [_, slug = 'getting-started'] = pathname.match(/presta\/docs\/(.+)/) || []
+  const [_, slug = 'overview'] = pathname.match(/presta\/docs\/(.+)/) || []
 
   const prestaDocs = load(
     () =>
@@ -107,7 +107,7 @@ export function Page({ pathname, head }) {
 
               <Box f fw jcb mt={16} mx={-4}>
                 {prev ? (
-                  <Box px={4} py={2} mw={[1, 1, 1/2]}>
+                  <Box f px={4} py={2} w={[1, 1, 1/2]}>
                     <SectionButton
                       as="a"
                       h
@@ -118,7 +118,7 @@ export function Page({ pathname, head }) {
                   </Box>
                 ) : <Box />}
                 {next && (
-                  <Box f jce px={4} py={2} mw={[1, 1, 1/2]}>
+                  <Box f jce px={4} py={2} w={[1, 1, 1/2]}>
                     <SectionButton
                       as="a"
                       h

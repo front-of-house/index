@@ -16,6 +16,7 @@ html, body {
   color: var(--d);
   font-weight: 400;
   font-family: 'Roboto', -apple-system, system-ui, BlinkMacSystemFont, sans-serif;
+  -moz-osx-font-smoothing: grayscale;
 }
 ::selection {
   background: blue;
