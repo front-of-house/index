@@ -45,7 +45,7 @@ export function Page({ head }) {
   });
 
   return (
-    <Box css={{ overflow: 'hidden' }}>
+    <Box pb={6} css={{ overflow: 'hidden' }}>
       <Gutter withVertical>
         <Box mx="auto" mw="1100px">
           <Box f aic jcb>
@@ -70,7 +70,7 @@ export function Page({ head }) {
               <Box as="h2" fs={2} w={[1, 1, 3/5]}>The hyper minimal web framework for developers.</Box>
 
               <Box w={[1, 1, 2/5]} pt={[8, 8, 0]} pl={[0, 0, 8]}>
-                <Box c="white" bg="d" px={6} pt={6} pb={16} ff="mono" fs={6} css={{
+                <Box c="white" bg="d" p={6} pt={6} pb={7} ff="mono" fs={6} css={{
                   borderRadius: '6px',
                   boxShadow: 'var(--shadow)',
                 }}>
@@ -80,7 +80,7 @@ export function Page({ head }) {
                     <Box mr={2} bg="#86CD4F" w="10px" h="10px" css={{ borderRadius: '10px' }} />
                   </Box>
 
-                  <Box f aic>
+                  <Box f>
                     <Box mr={2} css={{ opacity: 0.5 }}>$</Box> npx presta build pages/* dist/
                   </Box>
                 </Box>
@@ -113,7 +113,7 @@ export function Page({ head }) {
             </Box>
           </Box>
 
-          <Box as="ul" f fw pb={10} mx={-1}>
+          <Box as="ul" f fw mx={-1}>
             {[
               {
                 title: `0kb runtime*`,

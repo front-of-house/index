@@ -47,6 +47,12 @@ h1 { font-size: 3rem }h2 { font-size: 2.2rem }h3 { font-size: 1.8rem }h4 { font-
   list-style: disc outside;
   padding-left: 16px;
 }
+.wysiwyg li {
+  margin-bottom: 8px;
+}
+.wysiwyg li:last-child {
+  margin-bottom: 0;
+}
 .wysiwyg h1,
 .wysiwyg h2,
 .wysiwyg h3,

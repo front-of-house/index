@@ -66,7 +66,7 @@ export function Page({ pathname, head }) {
   });
 
   return (
-    <Box css={{ overflow: 'hidden' }}>
+    <Box pb={6} css={{ overflow: 'hidden' }}>
       <Gutter withVertical>
         <Box mx="auto" mw="1100px">
           <Box f aic jcb>
@@ -105,7 +105,7 @@ export function Page({ pathname, head }) {
                 {page.body}
               </Markdown>
 
-              <Box f fw jcb mt={16} mx={-4}>
+              <Box f fw jcb mt={12} mx={-4}>
                 {prev ? (
                   <Box f px={4} py={2} w={[1, 1, 1/2]}>
                     <SectionButton
