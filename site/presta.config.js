@@ -7,7 +7,6 @@ configure({ theme })
 
 const name = `sure thing`
 const image = `/static/og.png`
-const url = `https://sure-thing.net`
 
 export const pages = 'src/pages/**/*.js'
 export const output = 'build'
@@ -17,11 +16,12 @@ export function createDocument (ctx) {
     foot: {
       script: [{ src: '/client.js' }]
     },
+    image,
     head: {
       og: {
         site_name: name,
         image,
-        url
+        url: `https://sure-thing.net${ctx.pathname}`,
       },
       twitter: {
         site_name: name,
