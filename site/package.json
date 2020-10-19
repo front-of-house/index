@@ -1,7 +1,7 @@
 {
   "private": true,
   "scripts": {
-    "build": "npm run client:build && npm run site:build && npm run static:copy",
+    "build": "npm run site:build && npm run client:build && npm run static:copy",
     "serve": "presta serve",
     "static:copy": "cp -r static build",
     "client:watch": "webpack -w",
@@ -13,8 +13,8 @@
   "dependencies": {
     "@sanity/client": "^1.150.1",
     "@sanity/image-url": "^0.140.19",
-    "hypobox": "^1.2.0",
-    "hyposcript": "^1.0.0",
+    "hypobox": "^1.2.1",
+    "hyposcript": "^1.0.1",
     "marked": "^1.1.1",
     "operator": "^1.7.0",
     "picoapp": "^3.6.2",
