@@ -13,8 +13,8 @@
   "dependencies": {
     "@sanity/client": "^1.150.1",
     "@sanity/image-url": "^0.140.19",
-    "hypobox": "^0.3.2",
-    "hyposcript": "^0.3.0",
+    "hypobox": "^1.2.0",
+    "hyposcript": "^1.0.0",
     "marked": "^1.1.1",
     "operator": "^1.7.0",
     "picoapp": "^3.6.2",
@@ -25,7 +25,7 @@
     "@babel/core": "^7.11.6",
     "@babel/preset-react": "^7.10.4",
     "babel-loader": "^8.1.0",
-    "presta": "^0.11.0",
+    "presta": "^0.12.0",
     "prettier-standard": "^16.4.1",
     "webpack-cli": "^3.3.12"
   }
