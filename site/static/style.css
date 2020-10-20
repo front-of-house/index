@@ -70,6 +70,12 @@ h1 { font-size: 3rem }h2 { font-size: 2.2rem }h3 { font-size: 1.8rem }h4 { font-
   background: var(--dAlpha);
   box-shadow: var(--shadow);
 }
+.wysiwyg blockquote:first-child {
+  margin-top: 0;
+}
+.wysiwyg blockquote:last-child {
+  margin-bottom: 0;
+}
 .wysiwyg blockquote *:first-child {
   margin-top: 0;
 }
