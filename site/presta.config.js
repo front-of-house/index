@@ -9,7 +9,6 @@ const name = `sure thing`
 const image = `/static/og.png`
 
 export const pages = 'src/pages/**/*.js'
-export const output = 'build'
 
 export function createDocument (ctx) {
   return document({
