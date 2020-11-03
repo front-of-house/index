@@ -61,7 +61,7 @@ export function Page({ pathname, head }) {
     description: page.metaDescription,
     image: image(page.metaImage).width(1200).url(),
     link: [
-      { rel: 'icon', type: 'image/png', href: '/static/presta-mark-favicon.png' },
+      { rel: 'icon', type: 'image/png', href: '/static/presta-favicon.png' },
     ]
   });
 
