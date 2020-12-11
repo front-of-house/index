@@ -1,0 +1,13 @@
+@import url('https://unpkg.com/svbstrate@4.1.1/src/lib/reset.css');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap');
+
+html, body {
+  color: blue;
+  font-weight: 700;
+  font-family: 'Roboto Mono', monospace;
+  -moz-osx-font-smoothing: grayscale;
+}
+::selection {
+  background: blue;
+  color: white;
+}

@@ -1,0 +1,8 @@
+[build]
+  base = '.'
+  publish = "./build/static"
+
+[[redirects]]
+  from = "/presta/*"
+  to = "https://presta.run"
+  status = 200

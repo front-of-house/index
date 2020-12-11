@@ -1,0 +1,13 @@
+{
+  "private": true,
+  "scripts": {
+    "start": "npx presta watch",
+    "build": "npx presta"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "hypobox": "^1.2.1",
+    "hyposcript": "^1.0.1",
+    "presta": "^0.21.4"
+  }
+}
