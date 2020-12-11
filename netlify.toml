@@ -3,6 +3,13 @@
   publish = "./build/static"
 
 [[redirects]]
-  from = "/presta/*"
+  from = "/presta/docs"
+  to = "https://presta.run/docs"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/presta"
   to = "https://presta.run"
   status = 200
+  force = true
