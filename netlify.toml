@@ -5,11 +5,11 @@
 [[redirects]]
   from = "/presta/docs"
   to = "https://presta.run/docs"
-  status = 200
+  status = 301
   force = true
 
 [[redirects]]
   from = "/presta"
   to = "https://presta.run"
-  status = 200
+  status = 301
   force = true
