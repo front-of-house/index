@@ -1,13 +1,17 @@
 {
   "private": true,
   "scripts": {
-    "start": "npx presta watch",
+    "start": "npx presta dev",
     "build": "npx presta"
   },
-  "dependencies": {},
   "devDependencies": {
-    "hypobox": "^1.2.1",
-    "hyposcript": "^1.0.1",
-    "presta": "^0.21.4"
+    "@presta/adapter-netlify": "^0.5.2",
+    "@presta/html": "^0.2.5",
+    "@tsconfig/node14": "^1.0.1",
+    "deepmerge": "^4.2.2",
+    "hypobox": "^2.2.1",
+    "hyposcript": "^1.1.7",
+    "hypostyle": "^3.3.0",
+    "presta": "^0.45.4"
   }
 }

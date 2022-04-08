@@ -1,15 +1,4 @@
 [build]
-  base = '.'
-  publish = "./build/static"
-
-[[redirects]]
-  from = "/presta/docs"
-  to = "https://presta.run/docs"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/presta"
-  to = "https://presta.run"
-  status = 301
-  force = true
+  command = "npm run build"
+  publish = "build/static"
+  functions = "build/functions"
